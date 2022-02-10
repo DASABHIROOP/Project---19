@@ -89,7 +89,7 @@ function draw() {
  }
 
 }
-  if (gameState === END) {
+  else if (gameState === END) {
     jungle.velocityX = 0;
 
     obstaclesGroup.setVelocityXEach(0);
@@ -127,12 +127,10 @@ function spawnObstacles(){
       case 6: obstacle.addImage(obstacle6);
               break;
       default: break;
-
+      }
       obstacle.scale = 0.7;
       obstacle.lifetime = 300;
-
       obstaclesGroup.add(obstacle);
-    }
   }
 }
       
